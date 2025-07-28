@@ -45,7 +45,7 @@ just use:
 ```
 npx playwright test
 ```
-To run inly tests having tag as @web
+To run only tests having tag as @web
 ```
 npx playwright test --grep '@web'
 ```
