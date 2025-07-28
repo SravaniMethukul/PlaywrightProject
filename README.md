@@ -18,6 +18,7 @@ PlaywrightProject/
 │   └── SignUpPage.js              # Sign-up page interactions
 ├── tests/                     # Your real test scripts live here
 │   ├── RegistrationWithPOM.spec.js      # Registration tests using POM
+│   └── TestValidation.spec.js           # Tests with invalid data
 │   ├── TestWebScenarios.spec.js         # Web scenario tests
 │   ├── VisualTesting.spec.js            # Visual regression tests
 │   └── VisualTesting.spec.js-snapshots  # Snapshots for visual tests
