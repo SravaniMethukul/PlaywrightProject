@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://swift.techwithjatin.com",
+      "localStorage": [
+        {
+          "name": "user",
+          "value": "{\"username\":\"Sravani\",\"token\":\"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTcmF2YW5pIiwiaWF0IjoxNzUzNjM2OTQ0LCJleHAiOjE3NTM2NDA1NDR9.kGWoAJeAD3ZI0hESoYI8eQ5PH-EZ9zGGLjHofXl85Gs\"}"
+        }
+      ]
+    }
+  ]
+}
