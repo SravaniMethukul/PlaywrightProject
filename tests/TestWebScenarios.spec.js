@@ -26,7 +26,7 @@ test.beforeAll(async ({ browser }) => {
     await context.storageState({ path: 'state.json' });
     webContext = await browser.newContext({ storageState: 'state.json' });
     page = await webContext.newPage();
-})
+}, 50000)
 
 test.afterAll(async () => {
     await webContext.close();

@@ -6,7 +6,7 @@ class LoginPage {
         this.userName = page.locator("#username");
         this.password = page.locator("#password");
         this.signInButton = page.locator('//button[@type=\'submit\']');
-        this.toastMessage = page.locator('.Toastify__toast-body');
+        this.toastMessage = page.locator('.Toastify__toast');
     }
 
     async goTo() {

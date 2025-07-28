@@ -1,0 +1,12 @@
+Account Created: {
+  accountNumber: '3709872373',
+  accountType: 'CURRENT',
+  balance: 0,
+  status: 'ACTIVE',
+  branch: 'MAIN_BRANCH',
+  createdAt: '2025-07-28T13:37:52.373885328',
+  ownerName: 'John Doe'
+}
+Account created with ID: 3709872373
+Total Cards Found: 12
+Account Number Obtained: Account Number: 3709872373
