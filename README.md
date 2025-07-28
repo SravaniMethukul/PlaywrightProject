@@ -21,6 +21,10 @@ PlaywrightProject/
 │   ├── TestWebScenarios.spec.js         # Web scenario tests
 │   ├── VisualTesting.spec.js            # Visual regression tests
 │   └── VisualTesting.spec.js-snapshots  # Snapshots for visual tests
+├── utils/                     # utility folder
+│   ├── changePasswordData.json      # Data for changePassword Functionality
+│   ├── loginData.json               # Data for Login
+│   ├── registrationData.json        # Data for registration
 ├── .gitignore                 # Tells Git what to ignore (node_modules, etc.)
 ├── README.md                  # Project overview and instructions
 ├── package-lock.json          # Locks down npm dependencies (auto-generated)
