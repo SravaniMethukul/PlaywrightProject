@@ -22,6 +22,14 @@ class LoginPage {
         await expect(this.toastMessage).toBeHidden();
         await expect(this.page).toHaveURL('https://swift.techwithjatin.com/dashboard');
     }
+
+    async validateLoginError(username, password) {
+        await this.userName.fill(username);
+        await this.password.fill(password);
+        await this.signInButton.click();
+        await expect(this.toastMessage).toHaveText("The username or password you entered is incorrect");
+        await expect(this.toastMessage).toBeVisible();
+    }
 }
 
 module.exports = { LoginPage };
