@@ -19,6 +19,8 @@ class LoginPage {
         await this.password.fill(password);
         await this.signInButton.click();
         await expect(this.toastMessage).toHaveText("Login successful!");
+        await expect(this.toastMessage).toBeHidden();
+        await expect(this.page).toHaveURL('https://swift.techwithjatin.com/dashboard');
     }
 }
 

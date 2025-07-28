@@ -1,0 +1,49 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - text: Banking Dashboard
+  - button "account of current user": S
+- navigation:
+  - separator
+  - list:
+    - listitem: Dashboard
+    - listitem: Accounts
+    - listitem: Transfer
+    - listitem: Transactions
+    - listitem: Pay via QR
+    - listitem: Profile
+    - listitem: KYC Status
+    - listitem: Reports
+    - listitem: Change Password
+    - listitem: Assignments
+    - listitem: UPI Payment
+- main:
+  - heading "Welcome back, Sravani" [level=4]
+  - heading "Total Balance" [level=6]
+  - heading "$10,000.00" [level=4]
+  - paragraph: Across all accounts
+  - heading "Recent Transactions" [level=6]
+  - heading "2" [level=4]
+  - paragraph: Last 7 days
+  - heading "Spending Trend" [level=6]
+  - heading "+5.2%" [level=4]
+  - paragraph: vs last month
+  - heading "Recent Transactions" [level=6]
+  - heading "Online Transfer" [level=6]
+  - paragraph: 7/28/2025
+  - heading "-$1,000" [level=6]
+  - heading "Salary Credit" [level=6]
+  - paragraph: 7/28/2025
+  - heading "+$5,000" [level=6]
+- paragraph:
+  - text: Crafted with code, caffeine, and a little magic by
+  - link "Tech with Jatin":
+    - /url: https://techwithjatin.com/
+  - text: ⚡️💥
+- alert:
+  - img
+  - text: Login successful!
+- button "close"
+- progressbar "notification timer"
+```

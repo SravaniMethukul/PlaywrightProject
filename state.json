@@ -6,7 +6,7 @@
       "localStorage": [
         {
           "name": "user",
-          "value": "{\"username\":\"Sravani\",\"token\":\"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTcmF2YW5pIiwiaWF0IjoxNzUzNjM2OTQ0LCJleHAiOjE3NTM2NDA1NDR9.kGWoAJeAD3ZI0hESoYI8eQ5PH-EZ9zGGLjHofXl85Gs\"}"
+          "value": "{\"username\":\"Sravani\",\"token\":\"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTcmF2YW5pIiwiaWF0IjoxNzUzNzA4MDQ0LCJleHAiOjE3NTM3MTE2NDR9.NiYlJ8-nFVfB0uEz8ff5c9EUQRjTlXS-pTUF39-zSgw\"}"
         }
       ]
     }

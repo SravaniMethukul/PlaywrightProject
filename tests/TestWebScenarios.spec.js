@@ -6,9 +6,12 @@ let page;
 let poManager;
 let loginPage;
 
+let data = JSON.parse(JSON.stringify(require('../utils/loginData.json')));
+let changePasswordData = JSON.parse(JSON.stringify(require('../utils/changePasswordData.json')));
+
 test.beforeAll(async ({ browser }) => {
     const context = await browser.newContext();
-    const page = await context.newPage();
+    page = await context.newPage();
 
     poManager = new POManager(page);
     loginPage = poManager.getLoginPage();
@@ -16,7 +19,7 @@ test.beforeAll(async ({ browser }) => {
     await page.goto("https://swift.techwithjatin.com/login");
 
     await loginPage.goTo();
-    await loginPage.login('User1413', "UserToTest@1234");
+    await loginPage.login(data.username, data.password);
 
     await page.waitForLoadState('networkidle');
     //create a context that has storage data on logging in
@@ -62,6 +65,7 @@ test(`@web Edit Profile Test`, async ({ }) => {
 });
 
 test(`@web Change Password Test`, async ({ }) => {
+
     await page.goto('https://swift.techwithjatin.com/dashboard');
 
     await expect(page).toHaveURL('https://swift.techwithjatin.com/dashboard');
@@ -70,7 +74,7 @@ test(`@web Change Password Test`, async ({ }) => {
 
     // Change password
     await changePasswordPage.goToChangePasswordPage();
-    await changePasswordPage.fillChangePasswordForm('UserToTest@1234', 'NewPassword@1234', 'NewPassword@1234');
+    await changePasswordPage.fillChangePasswordForm(changePasswordData.currentPassword, changePasswordData.newPassword, changePasswordData.confirmPassword);
     await changePasswordPage.submitForm();
 });
 
