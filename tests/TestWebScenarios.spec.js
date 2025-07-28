@@ -64,7 +64,7 @@ test(`@web Edit Profile Test`, async ({ }) => {
     await profilePage.saveChanges();
 });
 
-test(`@web Change Password Test`, async ({ }) => {
+test(`@regression Change Password Test`, async ({ }) => {
 
     await page.goto('https://swift.techwithjatin.com/dashboard');
 
